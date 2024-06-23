@@ -1,11 +1,11 @@
 import React from 'react';
-import clock from '../images/subHeader/clock.png'
+import clock from '../images/leftHero/Clock.png'
 import cash from '../images/Cash.png'
 import split from '../images/Split payment.png'
 
 function QuickAction() {
     return (
-        <div className='flex gap-3 my-6 mx-3'>
+        <div className='flex gap-3 my-4 mx-3'>
             <div className='flex gap-3 p-4 py-2 bg-primary-red border rounded-lg'>
                 <img className='self-center' src={clock} />
                 <span className='self-center uppercase text-primary-white font-bold'>hold</span>

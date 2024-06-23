@@ -16,11 +16,11 @@ function Header() {
                     <img className='self-center' src={vector}/>
                     <p className='self-center font-bold capitalize'>october 18th 2002,10:00Am</p>
                 </div>
-                <div className='flex gap-9 align-middle '>
+                <div className='flex gap-7 align-middle '>
                     <img className='self-center' src={wifiIcon} />
                     <img className='self-center' src={lockIcon} />
                     <span className='bg-primary-black text-primary-white self-center py-2 px-4 capitalize rounded-full'>a</span>
-                    <img className='self-center' src={conten} />
+                    <img className='self-center cursor-pointer' src={conten} />
                 </div>
             </div>
         </div>

@@ -9,27 +9,26 @@ function LeftSection() {
     // const[quantity,setQuantity] = useState(tableData.map((quantity)=> quantity))
 
     return (
-        <div className='py-3 px-3' style={{height:'50vh',overflowY:'scroll'}}>
-            <table className='table-auto  rounded-lg bg-primary-gray' style={{width:'100%'}}>
-                <thead className='p-4 '>
-                {/* bg-primary-bg-th */}
-                    <tr className='uppercase bt-4 rounded-lg'>
-                        <th className='self-center font-normal py-2 px-4'>sno</th>
-                        <th className='self-center font-normal py-2 px-4'>ritc no</th>
-                        <th className='self-center font-normal py-2 px-4'>item name</th>
-                        <th className='self-center font-normal py-2 px-4'>stock</th>
-                        <th className='self-center font-normal py-2 px-4'>quantity</th>
-                        <th className='self-center font-normal py-2 px-4'>unit price</th>
-                        <th className='self-center font-normal py-2 px-4'>disc</th>
-                        <th className='self-center font-normal py-2 px-4'>tax</th>
-                        <th className='self-center font-normal py-2 px-4'>amount</th>
-                        <img className='self-center py-2 px-2 mt-3' src={actionIcon} />
+        <div className='mt-3 px-3' style={{height:'48vh',overflowY:'scroll'}}>
+            <table className='table-auto relative bg-primary-gray relative' style={{width:'100%'}}>
+                <thead className='p-4 rounded-lg' style={{borderRadius:'1rem'}}>
+                    <tr className='uppercase bt-4b'>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10 ' style={{borderRadius:'.4rem 0 0 0'}}>sno</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>ritc no</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>item name</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>stock</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>quantity</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>unit price</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>disc</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>tax</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>amount</th>
+                        <th className='sticky top-0 bg-primary-bg-th z-10' style={{borderRadius:'0 .3rem 0 0'}}><img className=' py-2 px-2 mt-3' src={actionIcon} /></th>
                     </tr>
                 </thead>
-                <tbody  >
+                <tbody  className='bg-primary-white'>
                 {tableData.map((data)=>{
                     return(
-                        <tr className='bg-primary-white border-t-2 border-primary-gray' key={data.id}>
+                        <tr className=' border-t-2 border-primary-gray' key={data.id}>
                             <td className='py-2 px-4 font-bold'>{data.sno}</td>
                             <td className='py-2 px-4'>{data.ritcNo}</td>
                             <td className='py-2 px-4'>{data.itemName}...</td>

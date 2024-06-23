@@ -36,18 +36,6 @@ export default[
         amount:`${100}.0000`
     },
     {
-        id:3,
-        sno:3,
-        ritcNo: 54075290,
-        itemName:'CLARKSON REC, POLYESTER',
-        stock:`${10}.000`,
-        quantity:333,
-        unitPrice:`${100}.000000`,
-        disc:100,
-        tax:100,
-        amount:`${100}.0000`
-    },
-    {
         id:4,
         sno:4,
         ritcNo: 54075290,

@@ -21,23 +21,23 @@ function SubHeader() {
          </div>
          <div className='bg-primary-orange flex align-middle gap-2 p-4 rounded-lg px-3'>
             <img className='self-center ' src={addPerson} alt='person icon'/>
-            <span className='self-center text-primary-white uppercase text-sm font-bold'>customer list</span>
+            <button className='self-center text-primary-white uppercase text-sm font-bold'>customer list</button>
          </div>
          <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg '>
             <img className='self-center' src={refreshArrow} alt='refresh arrow' />
-            <span className='self-center uppercase text-primary-blackish font-bold'>return items</span>
+            <button className='self-center uppercase text-primary-blackish font-bold'>return items</button>
          </div>
          <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg '>
             <img className='self-center' src={noteIcon} alt='refresh arrow' />
-            <span className='self-center uppercase text-primary-blackish font-bold'>order</span>
+            <button className='self-center uppercase text-primary-blackish font-bold'>order</button>
          </div>
          <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg '>
             <img className='self-center' src={clock} alt='refresh arrow' />
-            <span className='self-center uppercase text-primary-blackish font-bold'>hold list</span>
+            <button className='self-center uppercase text-primary-blackish font-bold'>hold list</button>
          </div>
          <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg '>
             <img className='self-center' src={receipt} alt='refresh arrow' />
-            <span className='self-center uppercase text-primary-blackish font-bold'>invoice list</span>
+            <button className='self-center uppercase text-primary-blackish font-bold'>invoice list</button>
          </div>
         </div>
     );

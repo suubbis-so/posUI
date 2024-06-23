@@ -18,7 +18,8 @@ export default {
           'grayish':'#E3E5E7',
           'gray':'#c6cdd573',
           'blackish':'#828487',
-          'bg':'#EAEBEC'
+          'bg':'#EAEBEC',
+          'grey':'rgb(177, 177, 177);'
         }
       }
     },

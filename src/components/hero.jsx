@@ -10,7 +10,7 @@ import leftArrow from '../images/leftHero/Arrow left.png'
 function Hero() {
     return (
         <>
-        <div className='grid grid-cols-3 p-2 '>
+        <div className='grid grid-cols-3'>
             <div className=' col-span-2'>
                 <div className=''>
                     <LeftSection />       
@@ -50,7 +50,7 @@ function Hero() {
                         <p className='text-primary-blackish text-primary-black  font-bold mt-6' style={{fontSize:'1.6em'}}>$100.332</p>
                     </div>
                  </div>
-                 <button className='bg-primary-orange my-4 p-8 mx-4 flex justify-center gap-6 rounded-md cursor-pointer hover:opacity-80' style={{width:'100%'}}>
+                 <button className='bg-primary-orange my-2  p-8 mx-2 flex justify-center gap-6 rounded-md cursor-pointer hover:opacity-80' style={{width:'100%'}}>
                     <img className='self-center' src={leftArrow} alt='left arrow'/>
                     <span className='self-center uppercase text-primary-white font-bold text-lg' style={{fontSize:'2rem'}}>pay all</span> 
                 </button>

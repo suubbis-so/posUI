@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/header'
 import SubHeader from './components/subHeader'
 import Hero from './components/hero'
+import ManageCustomer from './components/manageCustomer'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <div className=''>
         <Header />
         <SubHeader />
+        {/* <ManageCustomer /> */}
         <Hero />
       </div>
     </div>

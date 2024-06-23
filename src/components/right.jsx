@@ -12,16 +12,17 @@ function RightSection() {
             <form className='my-4'>
             <div className='flex py-2 px-4 align-middle gap-2 rounded-lg ' style={{border:'solid 1px gray'}}>
                 <img src={searchIcon}/>
-                <input className='capitalize' style={{background:'none'}} placeholder='search products'/>
+                <input className='capitalize outline-none' style={{background:'none'}} placeholder='search products'/>
             </div>
-            <div className='flex justify-between bg-primary-white my-3 py-2 px-4 align-middle gap-2 rounded-lg ' style={{border:'solid 1px gray'}}>
-                <input className='capitalize outline-none' style={{background:'none'}} placeholder='select brand..'/>
-                <img className='cursor-pointer' src={chevronRight}/>
-            </div>
-            <div className='flex justify-between bg-primary-white py-2 px-4 align-middle gap-2 rounded-lg ' style={{border:'solid 1px gray'}}>
-                <input className='capitalize outline-none' style={{background:'none'}} placeholder='search products..'/>
-                <img className='cursor-pointer' src={chevronRight}/>
-            </div>
+            <select value='select brand' className='text-primary-blackish my-3 py-2 px-4 rounded-lg capitalize' style={{background:'none',border:'solid 1px gray',width:'100%'}}>
+                <option className='capitalize text-primary-black' style={{background:'none'}}>select brand</option>
+            </select>
+            <select value='select brand' className='text-primary-blackish my-3 py-2 px-4 rounded-lg capitalize' style={{background:'none',border:'solid 1px gray',width:'100%'}}>
+                <option className='capitalize text-primary-black' style={{background:'none'}}>select category</option>
+                {/* <img className='cursor-pointer' src={chevronRight}/> */}
+                {/*             <select value='select brand' className='flex justify-between bg-primary-white my-3 py-2 px-4 align-middle gap-2 rounded-lg ' style={{background:'none',border:'solid 1px gray',width:'100%'}}> */}
+            </select>
+            
             </form>
 
             <div className='grid grid-cols-3 gap-3 pb-5' >

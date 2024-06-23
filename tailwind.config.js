@@ -19,7 +19,9 @@ export default {
           'gray':'#c6cdd573',
           'blackish':'#828487',
           'bg':'#EAEBEC',
-          'grey':'rgb(177, 177, 177);'
+          'grey':'rgb(177, 177, 177);',
+          'greyishWhite':'#f1f1f1',
+          'manage':'#19191c88'
         }
       }
     },

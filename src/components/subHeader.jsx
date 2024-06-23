@@ -12,9 +12,12 @@ function SubHeader() {
          <div>
             <img className='self-center' src={plus} alt='plusIcon'/>
          </div>
-         <div className='self-center'>
-            <p className='text-primary-orange uppercase text-xs border self-center p-4 pr-12 font-bold rounded-lg'>walk-in-customer</p>
-         </div>
+         <select className='self-center bg-primary-white text-primary-orange uppercase border-2 p-4 pr-12 font-bold rounded-lg'>
+            {/* <p className='text-primary-orange uppercase text-xs border self-center p-4 pr-12 font-bold rounded-lg'>walk-in-customer</p> */}
+            <option className=''>walk-in-customer</option>
+            <option className=''>online-customer</option>
+            <option className=''>vip-customer</option>
+         </select>
          <div className='flex gap-3 p-4 py-2 bg-primary-gray border rounded-lg'>
             <input type='text' className=' self-center font-xs outline-none' placeholder='search products... ' style={{background:'none'}} />
             <img className='self-center' src={searchframe} />

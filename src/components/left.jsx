@@ -10,19 +10,19 @@ function LeftSection() {
 
     return (
         <div className='mt-3 px-3' style={{height:'48vh',overflowY:'scroll'}}>
-            <table className='table-auto relative bg-primary-gray relative' style={{width:'100%'}}>
+            <table className='table-auto relative bg-primary-greyishWhite relative' style={{width:'100%'}}>
                 <thead className='p-4 rounded-lg' style={{borderRadius:'1rem'}}>
                     <tr className='uppercase bt-4b'>
-                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10 ' style={{borderRadius:'.4rem 0 0 0'}}>sno</th>
-                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>ritc no</th>
-                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>item name</th>
-                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>stock</th>
-                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>quantity</th>
-                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>unit price</th>
-                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>disc</th>
-                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>tax</th>
-                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-bg-th z-10'>amount</th>
-                        <th className='sticky top-0 bg-primary-bg-th z-10' style={{borderRadius:'0 .3rem 0 0'}}><img className=' py-2 px-2 mt-3' src={actionIcon} /></th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-greyishWhite z-10 ' style={{borderRadius:'.4rem 0 0 0'}}>sno</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-greyishWhite z-10'>ritc no</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-greyishWhite z-10'>item name</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-greyishWhite z-10'>stock</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-greyishWhite z-10'>quantity</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-greyishWhite z-10'>unit price</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-greyishWhite z-10'>disc</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-greyishWhite z-10'>tax</th>
+                        <th className='self-center font-normal py-2 px-4 sticky top-0 bg-primary-greyishWhite z-10'>amount</th>
+                        <th className='sticky top-0 bg-primary-greyishWhite z-10' style={{borderRadius:'0 .3rem 0 0'}}><img className=' py-2 px-2 mt-3' src={actionIcon} /></th>
                     </tr>
                 </thead>
                 <tbody  className='bg-primary-white'>

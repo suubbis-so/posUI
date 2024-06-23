@@ -1,44 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import actionIcon from '../images/leftHero/Action.png'
 import trash from '../images/leftHero/trash.png'
 import plusIcon from '../images/leftHero/plus.png'
 import minusIcon from '../images/leftHero/minus.png'
+import tableData from './data/tableData';
 
 function LeftSection() {
+    // const[quantity,setQuantity] = useState(tableData.map((quantity)=> quantity))
+
     return (
-        <div className='p-5'>
-            <table className='table-auto'>
-                <thead className='p-4' style={{backgroundColor:'#D2D6DC'}}>
-                    <tr className='uppercase '>
-                        <th className='self-center font-normal'>sno</th>
-                        <th className='self-center font-normal'>ritc no</th>
-                        <th className='self-center font-normal'>item name</th>
-                        <th className='self-center font-normal'>stock</th>
-                        <th className='self-center font-normal'>quantity</th>
-                        <th className='self-center font-normal'>unit price</th>
-                        <th className='self-center font-normal'>disc</th>
-                        <th className='self-center font-normal'>tax</th>
-                        <th className='self-center font-normal'>amount</th>
-                        <img className='self-center' src={actionIcon} />
+        <div className='py-3 px-3' style={{height:'50vh',overflowY:'scroll'}}>
+            <table className='table-auto  rounded-lg bg-primary-gray' style={{width:'100%'}}>
+                <thead className='p-4 '>
+                {/* bg-primary-bg-th */}
+                    <tr className='uppercase bt-4 rounded-lg'>
+                        <th className='self-center font-normal py-2 px-4'>sno</th>
+                        <th className='self-center font-normal py-2 px-4'>ritc no</th>
+                        <th className='self-center font-normal py-2 px-4'>item name</th>
+                        <th className='self-center font-normal py-2 px-4'>stock</th>
+                        <th className='self-center font-normal py-2 px-4'>quantity</th>
+                        <th className='self-center font-normal py-2 px-4'>unit price</th>
+                        <th className='self-center font-normal py-2 px-4'>disc</th>
+                        <th className='self-center font-normal py-2 px-4'>tax</th>
+                        <th className='self-center font-normal py-2 px-4'>amount</th>
+                        <img className='self-center py-2 px-2 mt-3' src={actionIcon} />
                     </tr>
                 </thead>
-                <tbody>
-                    <tr className='bg-primary-white'>
-                        <td>1</td>
-                        <td>54075290</td>
-                        <td>CLARKSON REC, POLYESTER ...</td>
-                        <td>10.000</td>
-                        <div className='flex gap-1 align-middle'>
-                            <img className='self-center' src={minusIcon} />
-                            <td className='self-center'>333</td>
-                            <img className='self-center' src={plusIcon} />
-                        </div>
-                        <td>100,000000</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100.0000</td>
-                        <img src={trash} />
-                    </tr>
+                <tbody  >
+                {tableData.map((data)=>{
+                    return(
+                        <tr className='bg-primary-white border-t-2 border-primary-gray' key={data.id}>
+                            <td className='py-2 px-4 font-bold'>{data.sno}</td>
+                            <td className='py-2 px-4'>{data.ritcNo}</td>
+                            <td className='py-2 px-4'>{data.itemName}...</td>
+                            <td className='py-2 px-4'>{data.stock}</td>
+                            <div className='flex text-center px-4'>
+                                <img className='self-center cursor-pointer hover:opacity-60' src={minusIcon}/>
+                                <td className='self-top py-2 px-2'>{data.quantity}</td>
+                                <img className='self-center cursor-pointer hover:opacity-60' src={plusIcon} />
+                            </div>
+                            <td className='py-2 px-4 text-center'>{data.unitPrice}</td>
+                            <td className='py-2 px-4'>%{data.disc}</td>
+                            <td className='py-2 px-4'>%{data.tax}</td>
+                            <td className='py-2 px-4  font-bold'>{data.amount}</td>
+                            <img className='py-2 px-2 mt-3' src={trash} />
+                       </tr>
+                    )
+                })}
+                    
                 </tbody>
 
             </table>

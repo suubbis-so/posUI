@@ -7,7 +7,7 @@ import productData from './data/productData';
 
 function RightSection() {
     return (
-        <div className='col-span-1 px-10 mt-3'>
+        <div className='col-span-1 px-10 mt-3 mr-5' style={{height:'85vh', overflowY:'scroll'}}>
             <h4 className='capitalize text-primary-blackish font-bold text-lg'>product information</h4>
             <form className='my-4'>
             <div className='flex py-2 px-4 align-middle gap-2 rounded-lg ' style={{border:'solid 1px gray'}}>
@@ -24,7 +24,7 @@ function RightSection() {
             </div>
             </form>
 
-            <div className='grid grid-cols-3 gap-3' >
+            <div className='grid grid-cols-3 gap-3 pb-5' >
                 { productData.map((data)=>{
                         return(
                             <div key={data.id} className='bg-primary-white rounded-md p-3'>

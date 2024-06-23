@@ -5,7 +5,7 @@ import split from '../images/Split payment.png'
 
 function QuickAction() {
     return (
-        <div className='flex gap-3 my-4'>
+        <div className='flex gap-3 my-6 mx-3'>
             <div className='flex gap-3 p-4 py-2 bg-primary-red border rounded-lg'>
                 <img className='self-center' src={clock} />
                 <span className='self-center uppercase text-primary-white font-bold'>hold</span>

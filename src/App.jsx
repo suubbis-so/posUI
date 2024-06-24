@@ -6,16 +6,33 @@ import Header from './components/header'
 import SubHeader from './components/subHeader'
 import Hero from './components/hero'
 import ManageCustomer from './components/manageCustomer'
+import AddCustomer from './components/addCustomer'
+import HoldList from './components/holdList'
+import CustomerList from './components/customerList'
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [holdListOPen,setHoldListOPen] = useState(false)
+  function toggleHoldList(){
+    setHoldListOPen(!holdListOPen)
+  }
+  const [addCustomer,setAddCustomer] = useState(false)
+  function toggleAddCustomer(){
+    setAddCustomer(!addCustomer)
+  }
+  const[customerList,setCustomerList] = useState(false)
+  const toggleCustomerList = () => {
+    setCustomerList(!customerList)
+  }
 
   return (
     <div className='bg-primary-bg'>
       <div className=''>
         <Header />
-        <SubHeader />
+        <SubHeader toggleHoldList={toggleHoldList} toggleAddCustomer={toggleAddCustomer} toggleCustomerList = {toggleCustomerList}/>
         {/* <ManageCustomer /> */}
+        <AddCustomer addCustomer={addCustomer} toggleAddCustomer={toggleAddCustomer}/>
+        <HoldList holdListOPen={holdListOPen}/>
+        <CustomerList customerList = {customerList}/>
         <Hero />
       </div>
     </div>

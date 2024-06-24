@@ -6,11 +6,11 @@ import refreshArrow from '../images/subHeader/Refresh.png'
 import noteIcon from '../images/subHeader/note.png'
 import clock from '../images/subHeader/clock.png'
 import receipt from '../images/subHeader/receipt.png'
-function SubHeader() {
+function SubHeader(props) {
     return (
         <div className='flex bg-primary-white gap-7 align-middle p-3 pl-5'>
-         <div>
-            <img className='self-center' src={plus} alt='plusIcon'/>
+         <div onClick={props.toggleAddCustomer}>
+            <img className='self-center cursor-pointer' src={plus} alt='plusIcon'/>
          </div>
          <select className='self-center bg-primary-white text-primary-orange uppercase border-2 p-4 pr-12 font-bold rounded-lg'>
             {/* <p className='text-primary-orange uppercase text-xs border self-center p-4 pr-12 font-bold rounded-lg'>walk-in-customer</p> */}
@@ -22,7 +22,7 @@ function SubHeader() {
             <input type='text' className=' self-center font-xs outline-none' placeholder='search products... ' style={{background:'none'}} />
             <img className='self-center' src={searchframe} />
          </div>
-         <div className='bg-primary-orange flex align-middle gap-2 p-4 rounded-lg px-3'>
+        <div className='bg-primary-orange flex align-middle gap-2 p-4 rounded-lg px-3' onClick={props.toggleCustomerList}>
             <img className='self-center ' src={addPerson} alt='person icon'/>
             <button className='self-center text-primary-white uppercase text-sm font-bold'>customer list</button>
          </div>
@@ -34,9 +34,9 @@ function SubHeader() {
             <img className='self-center' src={noteIcon} alt='refresh arrow' />
             <button className='self-center uppercase text-primary-blackish font-bold'>order</button>
          </div>
-         <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg '>
+         <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg  text-primary-blackish hover:text-primary-white   hover:bg-primary-orange ' onClick={props.toggleHoldList}>
             <img className='self-center' src={clock} alt='refresh arrow' />
-            <button className='self-center uppercase text-primary-blackish font-bold'>hold list</button>
+            <button className='self-center uppercase font-bold ' >hold list</button>
          </div>
          <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg '>
             <img className='self-center' src={receipt} alt='refresh arrow' />

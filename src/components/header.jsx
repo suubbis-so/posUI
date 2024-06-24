@@ -7,7 +7,7 @@ import conten from '../images/Content.png'
 
 function Header() {
     return (
-        <div className='flex bg-primary-white py-3 px-6 align-middle justify-between border-b-2'>
+        <div className='flex bg-primary-white py-3 px-6 align-middle justify-between border-b-2 sm:hidden lg:flex'>
             <div className='logoSec '>
                 <img src={frame} />
             </div>

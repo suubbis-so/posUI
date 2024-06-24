@@ -4,17 +4,13 @@ import arrowLeft from '../images/manageCustomer/arrow-left.png'
 import arrowRight from '../images/manageCustomer/arrow-right.png'
 import search from '../images/manageCustomer/search.png'
 
-function ManageCustomer() {
-    const[isManageOpen,setIsManageOpen] = useState(true)
-    function toggle(){
-        setIsManageOpen(!isManageOpen)
-    }
+function ManageCustomer(props) {
     return (
-        <div className='bg-primary-manage  w-full h-5/6  absolute top-40 left-0 z-20 backdrop-blur-sm' style={{display: isManageOpen? 'block':'none'}}>
+        <div className='bg-primary-manage  w-full h-5/6 absolute top-40 left-0 z-20 backdrop-blur-sm' style={{display: props.manage ? 'block' : 'none'}}>
             <div className='py-6  bg-primary-white rounded-lg ' style={{width:'60%',margin:'3% 15%'}}>
                 <div className='flex justify-between px-5 border-b-2 pb-5'>
                     <h5 className='capitalize font-bold text-lg '>manage customer</h5>
-                    <img className='self-center cursor-pointer hover:opacity-70' src={closeIcon} onClick={toggle}/>
+                    <img className='self-center cursor-pointer hover:opacity-70' src={closeIcon} onClick={props.toggleManage}/>
                 </div>
                 <div className='px-4 py-6 flex gap-2 border-b-2 border-r-2 mr-6'>
                     <img className='self-center' src={search} />

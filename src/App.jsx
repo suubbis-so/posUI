@@ -23,13 +23,17 @@ function App() {
   const toggleCustomerList = () => {
     setCustomerList(!customerList)
   }
+  const[manage,setManage] = useState(false)
+  const toggleManage = () => {
+    setManage(!manage)
+  }
 
   return (
     <div className='bg-primary-bg'>
       <div className=''>
         <Header />
-        <SubHeader toggleHoldList={toggleHoldList} toggleAddCustomer={toggleAddCustomer} toggleCustomerList = {toggleCustomerList}/>
-        {/* <ManageCustomer /> */}
+        <SubHeader toggleAddCustomer={toggleAddCustomer} toggleCustomerList = {toggleCustomerList} toggleHoldList={toggleHoldList} toggleManage={toggleManage}/>
+        <ManageCustomer manage={manage} toggleManage={toggleManage}/>
         <AddCustomer addCustomer={addCustomer} toggleAddCustomer={toggleAddCustomer}/>
         <HoldList holdListOPen={holdListOPen}/>
         <CustomerList customerList = {customerList}/>

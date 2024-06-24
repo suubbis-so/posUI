@@ -91,7 +91,7 @@ function CustomerList(props) {
                     </div>
                
                 </div>
-                <div className='px-20 mt-1'>
+                <div className='mx-20 my-2'>
                     <button className='py-6 w-full bg-primary-orange flex justify-center gap-6 rounded-md cursor-pointer hover:opacity-80' >
                         <img className='self-center' src={arrowLeft} alt='left arrow'/>
                         <span className='self-center uppercase text-primary-white font-bold text-lg' style={{fontSize:'2rem'}}>confirm</span> 

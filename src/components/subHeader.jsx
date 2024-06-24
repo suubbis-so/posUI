@@ -30,7 +30,7 @@ function SubHeader(props) {
             <img className='self-center' src={refreshArrow} alt='refresh arrow' />
             <button className='self-center uppercase text-primary-blackish font-bold'>return items</button>
          </div>
-         <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg '>
+         <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg ' onClick={props.toggleManage}>
             <img className='self-center' src={noteIcon} alt='refresh arrow' />
             <button className='self-center uppercase text-primary-blackish font-bold'>order</button>
          </div>

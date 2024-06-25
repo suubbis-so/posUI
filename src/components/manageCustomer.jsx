@@ -6,11 +6,11 @@ import search from '../images/manageCustomer/search.png'
 
 function ManageCustomer(props) {
     return (
-        <div className='bg-primary-manage  w-full h-5/6 absolute top-40 left-0 z-20 backdrop-blur-sm' style={{display: props.manage ? 'block' : 'none'}}>
-            <div className='py-6  bg-primary-white rounded-lg ' style={{width:'60%',margin:'3% 15%'}}>
+        <div className='bg-primary-manage w-full  h-5/6 absolute top-40 left-0 z-20 backdrop-blur-sm' style={{display: props.manageCustomer ? 'block' : 'none'}}>
+            <div className='py-6 m-4 sm:m-8 bg-primary-white lg:w-2/3 rounded-lg  md:ml-32 mt-5' >
                 <div className='flex justify-between px-5 border-b-2 pb-5'>
                     <h5 className='capitalize font-bold text-lg '>manage customer</h5>
-                    <img className='self-center cursor-pointer hover:opacity-70' src={closeIcon} onClick={props.toggleManage}/>
+                    <img className='self-center cursor-pointer hover:opacity-70' src={closeIcon} onClick={props.toggleManage    }/>
                 </div>
                 <div className='px-4 py-6 flex gap-2 border-b-2 border-r-2 mr-6'>
                     <img className='self-center' src={search} />
@@ -20,28 +20,28 @@ function ManageCustomer(props) {
                     <table className=''>
                         <thead className='border-b-2'>
                             <tr>
-                                <th className='py-3 px-4 capitalize font-bold text-primary-blackish text-sm'>customer name</th>
-                                <th className='py-3 px-10 capitalize font-bold text-primary-blackish text-sm' >phone number</th>
-                                <th className='py-3 px-10 capitalize font-bold text-primary-blackish text-sm'>email address</th>
-                                <th className='py-3 px-10 capitalize font-bold text-primary-blackish text-sm'>ref code</th>
-                                <th className='py-3 px-10 capitalize font-bold text-primary-blackish text-sm'>city location</th>
+                                <th className='py-3 sm:px-8 md:px-4 capitalize font-bold text-primary-blackish text-sm'>customer name</th>
+                                <th className='py-3 sm:px-8 px-3 md:px-10 capitalize font-bold text-primary-blackish text-sm' >phone number</th>
+                                <th className='py-3 sm:px-8 md:px-10 capitalize font-bold text-primary-blackish text-sm'>email address</th>
+                                <th className='hidden lg:table-cell py-3 sm:px-8 md:px-10 capitalize font-bold text-primary-blackish text-sm'>ref code</th>
+                                <th className='hidden lg:table-cell py-3 sm:px-8 md:px-10 capitalize font-bold text-primary-blackish text-sm'>city location</th>
                             </tr>
                         </thead>
                         <tbody>
                         {/* row1 */}
                             <tr className='border-b-2'>
-                                <td className='py-3 px-4 text-sm capitalize'>john sparrow</td>
-                                <td className='py-3 px-10 text-sm'>083894771983</td>
-                                <td className='py-3 px-10 text-sm'>john.sparrow@mail.com</td>
-                                <td className='py-3 px-12 font-bold text-gray-400'> - </td>
-                                <td className='py-3 px-10 text-sm'>Sleman, Yogyakarta</td>
+                                <td className='py-3 sm:px-8 md:px-4 text-sm capitalize'>john sparrow</td>
+                                <td className='py-3 sm:px-8 md:px-10 text-sm'>083894771983</td>
+                                <td className='py-3 sm:px-8 md:px-10 text-sm'>john.sparrow@mail.com</td>
+                                <td className='hidden sm:px-8 lg:table-cell py-3 md:px-12 font-bold text-gray-400'> - </td>
+                                <td className='hidden sm:px-8 lg:table-cell py-3 md:px-10 text-sm'>Sleman, Yogyakarta</td>
                             </tr>
                             {/* row2 */}
                             <tr className='bg-primary-greyishWhite border-b-2'>
-                                <td className='py-3 px-4 text-sm capitalize'>bella anisa</td>
-                                <td className='py-3 px-10 text-sm'>081829748835</td>
-                                <td className='py-3 px-10 text-sm'>bella.anisa27@mail.com</td>
-                                <td colSpan={2}  className='px-2'>
+                                <td className='py-3 sm:px-8  md:px-4 text-sm capitalize'>bella anisa</td>
+                                <td className='py-3 sm:px-8  md:px-10 text-sm'>081829748835</td>
+                                <td className='py-3 sm:px-8  md:px-10 text-sm'>bella.anisa27@mail.com</td>
+                                <td colSpan={2}  className='hidden lg:table-cell md:px-2'>
                                     <div className='flex gap-4 py-2 px-5'>
                                         <button className='text-sm self-center capitalize  py-1 px-4 self-center text-primary-orange font-bold px-3 border-2 border-primary-orange rounded-lg hover:opacity-60'>display order</button>
                                         <button className='text-sm self-center capitalize py-1 px-2 font-bold bg-orange-50 text-primary-orange rounded'>edit info</button>
@@ -51,29 +51,35 @@ function ManageCustomer(props) {
                             </tr>
                             {/* row3 */}
                             <tr className='border-b-2'>
-                                <td className='py-3 px-4 text-sm capitalize'>minimo masasi</td>
-                                <td className='py-3 px-10 text-sm'>087837829837</td>
-                                <td className='py-3 px-10 text-sm'>minimo45@mail.com</td>
-                                <td className='py-3 px-12 font-bold text-gray-400'> - </td>
-                                <td className='py-3 px-10 text-sm'>Sleman, Yogyakarta</td>
+                                <td className='py-3 sm:px-8  md:px-4 text-sm capitalize'>minimo masasi</td>
+                                <td className='py-3 sm:px-8  md:px-10 text-sm'>087837829837</td>
+                                <td className='py-3 sm:px-8  md:px-10 text-sm'>minimo45@mail.com</td>
+                                <td className='hidden lg:table-cell py-3 md:px-12 font-bold text-gray-400'> - </td>
+                                <td className='hidden lg:table-cell py-3 md:px-10 text-sm'>Sleman, Yogyakarta</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 
 
-                <div className='flex justify-between p-4'>
-                    <div className='flex gap-5 border-2 px-2  rounded-full'>
-                        <button className='flex gap-2  hover:opacity-70'>
+                <div className='flex flex-col gap-3 md:gap-0 sm:flex-row justify-between p-4'>
+                    
+                    <div className='border-2 flex gap-5 px-2  rounded-full'>
+                         <button className='flex gap-2 hover:opacity-70'>
                             <img className='self-center' src={arrowLeft} alt='previous arrow icon'/>
                             <span className='self-center capitalize font-bold text-primary-blackish'>previous</span>
                         </button>
+                    
+                    
                         <p className='self-center border-l-2 border-r-2 hover:opacity-70 px-4 py-2 font-bold'>1</p>
                         <button className='flex gap-2 hover:opacity-70'>
                             <span className='self-center capitalize font-bold text-primary-blackish'>next</span>
                             <img className='self-center' src={arrowRight} alt='next arrow icon'/>
                         </button>
+                    
                     </div>
+                       
+                   
 
                     {/* buttons */}
                     <div className='flex gap-2'>

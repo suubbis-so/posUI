@@ -4,23 +4,25 @@ import vector from '../images/Vector.png'
 import wifiIcon from '../images/wifi.png'
 import lockIcon from '../images/Lock.png'
 import conten from '../images/Content.png'
+import { FaBars } from 'react-icons/fa'
 
-function Header() {
+function Header(props) {
     return (
         <div className='flex bg-primary-white py-3 px-6 align-middle justify-between border-b-2'>
-            <div className='logoSec '>
+            <div className='logoSec'>
                 <img src={frame} />
+                {/* <FaBars className='cursor-pointer self-center hover:text-orange-500 md:hidden' onClick={props.toggleMenu}/> */}
             </div>
-            <div className='flex gap-5 align-middle'>
-                <div className='flex gap-7 '>
-                    <img className='self-center' src={vector}/>
-                    <p className='self-center font-bold capitalize'>october 18th 2002,10:00Am</p>
+            <div className='flex gap-5 align-middle' >
+                <div className='hidden md:flex gap-7  '>
+                    <img className=' self-center' src={vector}/>
+                    <p className=' self-center font-bold capitalize'>october 18th 2002,10:00Am</p>
                 </div>
                 <div className='flex gap-7 align-middle '>
-                    <img className='self-center' src={wifiIcon} />
-                    <img className='self-center' src={lockIcon} />
-                    <span className='bg-primary-black text-primary-white self-center py-2 px-4 capitalize rounded-full'>a</span>
-                    <img className='self-center cursor-pointer' src={conten} />
+                    <img className=' self-center' src={wifiIcon} />
+                    <img className=' self-center' src={lockIcon} />
+                    <span className=' bg-primary-black text-primary-white self-center py-2 px-4 capitalize rounded-full'>a</span>
+                    <img className='hidden md:flex self-center cursor-pointer' src={conten} />
                 </div>
             </div>
         </div>

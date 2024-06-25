@@ -98,6 +98,29 @@ export default [
         stock:200,
 
     },
+    {
+        id:13,
+        name:'steak sapi bakar',
+        image:productImage,
+        price: 25.12,
+        stock:200,
 
+    },
+    {
+        id:14,
+        name:'steak sapi bakar',
+        image:productImage,
+        price: 25.12,
+        stock:200,
+
+    },
+    {
+        id:14,
+        name:'steak sapi bakar',
+        image:productImage,
+        price: 25.12,
+        stock:200,
+
+    },
 
 ]

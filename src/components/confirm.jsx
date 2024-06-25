@@ -7,9 +7,9 @@ import leftArrow from '../images/manageCustomer/arrow-left.png'
 import arrowLeft from '../images/Arrow left.png'
 
 
-function CustomerList(props) {
+function Cornfirm(props) {
     return (
-        <div className='bg-primary-manage  w-full h-5/6 absolute top-40 left-0 z-20 backdrop-blur-sm ' style={{display: props.customerList ? 'block' : 'none'}} >   
+        <div className='bg-primary-manage  w-full h-5/6 absolute top-40 left-0 z-20 backdrop-blur-sm ' style={{display:props.confirm?'block':'none'}}>   
             <div className='py-6  bg-primary-white rounded-lg w-96' style={{width:'60%',margin:'0% 15%'}}>
                 <h4 className='text-center font-bold capitalize py-1'>confirm order</h4>
                 <p className='text-center text-primary-blackish text-sm '>Please confirm the order below to completed payment</p>
@@ -51,7 +51,7 @@ function CustomerList(props) {
                 </table>
             </div>
             <div className='grid grid-cols-5 gap-2 mx-28'>
-                    <div className='p-2 bg-primary-gray border border-primary-gray shadow-black-500/40  rounded-lg hover:border-primary-orange '>
+                    <div className='p-2 bg-primary-gray border border-primary-gray shadow-black-500/40  rounded-lg hover:border-primary-orange ' onClick={props.toggleConfirm}>
                         <div className='flex flex-col gap-3  align-middle'>
                             <img className=' bg-gray-200 cursor-pointer w-10' src={leftArrow} />
                             <p className=' uppercase text-primary-blackish'>back</p>
@@ -92,7 +92,7 @@ function CustomerList(props) {
                
                 </div>
                 <div className='mx-20 my-2'>
-                    <button className='py-6 w-full bg-primary-orange flex justify-center gap-6 rounded-md cursor-pointer hover:opacity-80' >
+                    <button className='py-6 w-full bg-primary-orange flex justify-center gap-6 rounded-md cursor-pointer hover:opacity-80' onClick={props.toggleMultiplePayments}>
                         <img className='self-center' src={arrowLeft} alt='left arrow'/>
                         <span className='self-center uppercase text-primary-white font-bold text-lg' style={{fontSize:'2rem'}}>confirm</span> 
                     </button>
@@ -105,4 +105,4 @@ function CustomerList(props) {
     );
 }
 
-export default CustomerList;
+export default Cornfirm;

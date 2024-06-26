@@ -6,8 +6,6 @@ import minusIcon from '../images/leftHero/minus.png'
 import tableData from './data/tableData';
 
 function LeftSection() {
-    // const[quantity,setQuantity] = useState(tableData.map((quantity)=> quantity))
-
     return (
         <div className='mt-3 px-3' style={{height:'48vh',overflowY:'scroll'}}>
             <table className='p-2 table-auto relative bg-primary-greyishWhite relative' style={{width:'100%'}}>

@@ -3,7 +3,7 @@ import React from 'react';
 function MultiplePayment(props) {
     return (
         <div className='bg-primary-manage  w-full h-5/6 absolute top-40 left-0 z-20 backdrop-blur-sm' style={{display: props.multiplePayments ? 'block' : 'none'}}>
-          <div className='py-6  bg-primary-white rounded-lg w-3/5 my-4 mx-56'>
+          <div className='py-6  bg-primary-white rounded-lg mx-4 sm:mx-8 lg:w-3/5 my-4 md:mx-56'>
             <h4 className='text-center font-bold capitalize py-1 text-lg'>multiple payment</h4>
             <p className='text-center text-primary-blackish text-sm '>Please confirm the order below to completed payment</p>
             <div className='grid lg:grid-cols-3 gap-8 my-2 mx-2'>

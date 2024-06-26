@@ -36,11 +36,6 @@ function SubHeader(props) {
          </div>
          <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg  text-primary-blackish hover:text-primary-white   hover:bg-primary-orange ' onClick={props.toggleHoldList}>
             <img className='self-center clock' src={clock} alt='refresh arrow' />
-            {/* <svg className='self-center clock' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <circle cx="12" cy="12" r="9" stroke="#828487" stroke-width="1.5"/>
-               <path d="M12 6.5V11.9586C12 11.9851 11.9895 12.0105 11.9707 12.0293L9 15" stroke="#828487" stroke-width="1.5" stroke-linecap="round"/>
-            </svg> */}
-
             <button className='self-center uppercase font-bold ' >hold list</button>
          </div>
          <div className='border flex py-2 px-4 align-middle gap-2 rounded-lg text-primary-blackish hover:text-primary-white   hover:bg-primary-orange ' >

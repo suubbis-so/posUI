@@ -3,7 +3,7 @@ import React from 'react';
 function HoldList(props) {
 
     return (
-        <div className='bg-primary-manage  w-full h-5/6  absolute top-40 right-0 z-20 backdrop-blur-sm' style={{display:props.holdListOPen? 'block':'none'}}>
+  <div className='tbg-primary-manage  w-full h-5/6  absolute top-40 right-0 z-20 backdrop-blur-sm' style={{display:props.holdListOpen? 'block':'none'}} onClick={props.toggleHoldList}>
             <div className='py-6 px-4 mx-2 lg:mx-0 bg-primary-white rounded-lg lg:w-3/5 lg:ml-96 my-4' >
             {/* style={{width:'60%',margin:'2% 30%'}} */}
                 <table className='border'>

@@ -6,7 +6,7 @@ function MultiplePayment(props) {
           <div className='py-6  bg-primary-white rounded-lg w-3/5 my-4 mx-56'>
             <h4 className='text-center font-bold capitalize py-1 text-lg'>multiple payment</h4>
             <p className='text-center text-primary-blackish text-sm '>Please confirm the order below to completed payment</p>
-            <div className='grid grid-cols-3 gap-8 my-2 mx-2'>
+            <div className='grid lg:grid-cols-3 gap-8 my-2 mx-2'>
                 <section className='col-span-2'>
                     <form>
                         <div className='p-4 border rounded-lg'>
@@ -60,7 +60,7 @@ function MultiplePayment(props) {
                 </section>
                      {/* rightSection */}
                 <section>
-                    <div className='bg-primary-blackish py-4 px-4 rounded-lg'>
+                    <div className='bg-primary-blackish mx-10 py-4 px-4 rounded-lg'>
                         <div className='bg-primary-white flex flex-col justify-items-stretch gap-3 p-3 rounded-lg'>
                             <div className='grid grid-cols-2 justify-items-end border-b-2'>
                                 <p className='uppercase text-primary-blackish'>total-items</p>

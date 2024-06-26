@@ -115,7 +115,7 @@ export default [
 
     },
     {
-        id:14,
+        id:15,
         name:'steak sapi bakar',
         image:productImage,
         price: 25.12,

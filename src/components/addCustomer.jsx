@@ -4,8 +4,9 @@ import closeIcon from '../images/manageCustomer/x.png'
 function AddCustomer(props) {
     return (
         <div className='bg-primary-manage  w-full h-5/6 absolute top-40 left-0 z-20 backdrop-blur-sm' style={{display: props.addCustomer? 'block':'none'}}>
-            <div className='py-6  bg-primary-white rounded-lg ' style={{width:'45%',margin:'3% 25%'}}>
+            <div className='py-6  bg-primary-white rounded-lg mx-2 md:w-3/4 md:mx-20 lg:w-2/4 lg:mx-80 mt-3' >
                 <div className='flex justify-between px-5 border-b-2 pb-5'>
+                {/*width:'45%' style={{margin:'3% 25%'}} */}
                         <h5 className='capitalize font-bold text-lg '>add customers</h5>
                     <img className='self-center cursor-pointer hover:opacity-70' src={closeIcon} onClick={props.toggleAddCustomer}/>
                 </div>
@@ -32,7 +33,7 @@ function AddCustomer(props) {
                         </div>
                         <div className='flex flex-col gap-1'>
                             <label className='text-sm text-sm font-bold text-primary-blackish'>Date of birth</label>
-                            <div className='flex gap-2'>
+                            <div className='flex flex-col lg:flex-row gap-2'>
                                 <select className='capitalize px-7 py-2 border rounded-md' style={{background:'none'}}>
                                     <option >day</option>
                                 </select>
